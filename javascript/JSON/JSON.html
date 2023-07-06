@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let empdept = "Dev";
+        let salary = 345768;
+    
+        var studentData = [
+            "satish",
+            21,
+            "male",
+            [90, 89, 89, 92, 94],
+            0,
+            0,
+        ]
+
+        for(var i = 0; i < studentData[3].length; i++){
+            studentData[4] = studentData[4] + studentData[3][i];
+        }
+
+        studentData[5] = studentData[4] / studentData[3].length;
+
+        console.log("name is " + studentData[0])
+        console.log("age is" + studentData[1]);
+        console.log("gender is " + studentData[2])
+        console.log('marks is ' + studentData[3])
+        console.log("total is " + studentData[4])
+        console.log("avg is " + studentData[5]) 
+    </script>
+</body>
+</html>
