@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 90;
+        var b = a;
+
+        console.log(a);
+        console.log(b);
+
+        b = b + 2;
+        console.log(a);
+        console.log(b);
+
+        var userdata = {
+            age : 21,
+            gender : 'male',
+            location : "hyderabad",
+        };
+           console.log(userdata);
+
+           var copydata = userdata;
+           console.log(copydata)
+
+           copydata.details = {
+            jobrole : "coding",
+           } 
+           //console.log(userdata);
+           console.log(copydata);
+
+           var userdata ={
+            name : 'satish',
+            age : 21,
+            gender : 'male',
+            location : 'hyd',
+            addInfo :{
+                state :'andhra',
+                stcode : 'APo7',
+            }
+           }
+
+           var copydata = userdata;
+           copydata.vehical ='bajaj';
+           copydata.typeofvehical = "fourwheelar";
+
+           console.log(copydata);
+           console.log(userdata);
+
+           console.log(userdata);
+
+           
+    </script>
+</body>
+</html>

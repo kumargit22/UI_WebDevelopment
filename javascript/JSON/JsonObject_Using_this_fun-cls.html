@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            this = {
+            name :"anoj",
+            age : 21,
+            'gender' : 'male',
+            marks :[89, 90, 78, 91, 93, 96],
+
+            getTotalAndAvg : function () {
+                this.total = 0;
+
+                for(var i = 0; i < studentData.marks.length; i++ ){
+                    this.total = this.total + this.marks[i];
+                }
+                this.avg = this.total / this.marks.length;
+            },
+            
+            displaystudentData : function () {
+                this.getTotalAndAvg ();
+                console.log('studentData');
+                console.log('studentName : ' + studentData.name);
+                console.log('age is :' + studentData.age);
+                console.log('marks of student: '+ studentData.marks);
+                console.log('gender is :' + studentData.gender);
+                console.log ('total is : ' + studentData.total);
+                console.log ('avg is : '+ studentData.avg);
+
+                console.log (studentData);
+            },  
+        }
+            this.displaystudentData();
+        </script>
+    </body>
+</html>

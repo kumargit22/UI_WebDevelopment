@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentData = {
+            name : 'raj',
+            age :20,
+            gender : "male",
+            marks : [87, 89, 80, 92, 95],
+            
+        }
+            var getTotalAndAvg = () => {
+                studentData.total =0;
+
+                for(var i = 0; i < studentData.marks.length; i++ ) {
+
+                    studentData.total = studentData.total + studentData.marks[i];
+                }
+
+                studentData.avg = studentData.total / studentData.marks.length;
+            }
+
+                var displaystudentData =() => {
+                    getTotalAndAvg ();
+
+                    console.log("studentData");
+                    console.log("studentname : " + studentData.name );
+                    console.log("studentage : " + studentData.age);
+                    console.log("student gender : " + studentData.gender);
+                    console.log("student marks " + studentData.marks);
+                    console.log("total is " + studentData.total);
+                    console.log("avg is " + studentData.avg);
+
+                    console.log(studentData);
+
+                }
+
+                displaystudentData();
+    </script>
+</body>
+</html>

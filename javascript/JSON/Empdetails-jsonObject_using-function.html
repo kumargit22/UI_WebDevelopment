@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empdetails ={
+            total : 0,
+            readempdetails : function(){
+               empdetails.name = 'satish',
+               empdetails.age = 20,
+               empdetails.gender = 'female',
+               empdetails.department = 'development',
+               empdetails.basicSal = 600000,
+               empdetails.getpfAndhra();
+            },
+            getpfAndhra() {
+                empdetails.pf =( empdetails.basicSal * 12) / 100;
+                empdetails.hra = (empdetails.basicSal *24) / 100;
+                empdetails.gettotalSal();
+            },
+            gettotalSal() {
+                empdetails.totalSal = empdetails.basicSal + empdetails.pf + empdetails.hra;
+                empdetails.gettotaltax();
+            },
+            gettotaltax(){
+                var taxpercent = 0
+                if(empdetails.gender == 'male'){
+                    if(empdetails['totalSal'] >= 500000){
+                        taxpercent = 15;
+                    } else{
+                        taxpercent = 10;
+                    }
+                }else{ //female
+                    if(empdetails['totalSal'] >= 600000){
+                        taxpercent = 7.6;
+                    }else{
+                        taxpercent = 5.6;
+                    }
+                }
+                empdetails.taxToBepaid = (empdetails.basicSal * taxpercent) / 100;
+                empdetails.displayempdetails();
+            },
+            displayempdetails() {
+                console.log('emp Name : '+ empdetails.name);
+                console.log("emp age :" + empdetails.age);
+                console.log('emp gender :' + empdetails.gender);
+                console.log('emp basicSal :' + empdetails.basicSal);
+                console.log('emp pf :' + empdetails.pf);
+                console.log('emp hra :' + empdetails.hra);
+                console.log( 'totalSal:' + empdetails.totalSal);
+                console.log('total Tax : '+ empdetails.taxToBepaid)
+            },
+
+    };
+
+        empdetails.readempdetails();
+    </script>
+</body>
+</html>

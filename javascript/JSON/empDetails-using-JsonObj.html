@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empdetails = {};
+
+        var readempdetails = () => {
+            empdetails.name = prompt('enter the emp Name ');
+            empdetails.age = prompt('enter the age ');
+            empdetails.gender  = prompt('enter the gender ');
+            empdetails.basicSal = prompt('enter the basicSal');
+           empdetails.basicSal = parseInt(empdetails.basicSal);
+            empdetails.dept = prompt('enter the dept ');
+            getpfAndhra();
+        }
+            var getpfAndhra = () => {
+                empdetails.pf = (empdetails.basicSal * 12 ) / 100;
+                
+                empdetails.hra = (empdetails.basicSal * 24) / 100;
+            
+
+                gettotalsal();
+            }
+            var gettotalsal = () => {
+                empdetails.totalsal = empdetails.basicSal + empdetails.pf+empdetails.hra;
+                
+                gettotaltax();
+            }
+
+            var gettotaltax = () => {
+                var taxpercent =0;
+                if(empdetails.gender == 'male'){
+                    if(empdetails['totalsal'] >= 500000){
+                        taxpercent =10;
+                    } 
+                    else{
+                        taxpercent = 15;
+                    }
+
+                }else{ //female
+                    if(empdetails['totalsal'] >= 500000){
+                        taxpercent = 10;
+                    }
+                    else{
+                        taxpercent = 5;
+                    }
+                }
+
+                empdetails.taxToBepaid = (empdetails.basicSal * taxpercent) / 100;
+                
+                displayempdetails();
+
+            }
+
+                var displayempdetails = () => {
+                   
+                    console.log ('empdetails');
+                    console.log("emp Name : " + empdetails.name);
+                    console.log("enter the age : "+ empdetails.age);
+                    console.log('enter the gender : '+ empdetails.gender);
+                    console.log(' the totalsal :' + empdetails.totalsal);
+                    console.log('the tax to be paid :' + empdetails.taxToBepaid)
+                }
+
+                readempdetails();
+    </script>
+</body>
+</html>
