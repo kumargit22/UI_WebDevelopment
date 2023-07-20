@@ -1,0 +1,49 @@
+.productdetailscontainer > li{
+                border : 1px solid;
+                margin: 5px;
+                padding:5px;
+                height: 500px;
+                width: 300px;
+                float: left;
+                list-style: none;
+                font-size: 20px;
+            }
+            li{list-style: none;}
+            ul{
+                margin: 5px;
+                padding:5px;
+            }
+            h3{
+                border: 1px solid;
+                text-align: center;
+                padding: 10px;
+                color:brown
+            }
+            .productdetailscontainer img {
+                width: 250px;
+                height :150px;
+                position: relative;
+                left:5px;
+            }
+            .details li {
+                margin:10px;
+            }
+            .ratingcontainer div {
+                background-image: url('New folder/DHTML/Images/OIP (2).jpg');
+                width: 20px;
+                height: 20px;
+            }
+            .actualprice{
+                color: red;
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-line: line-through;
+            }
+            .discountpercent {
+                color: green;
+                font-weight: bold;
+            }
+           .productdetailscontainer > li:hover {
+            cursor: pointer;
+            background-color: rgba(173, 216, 230, 0.555);
+           }
