@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+    <body>
+        <h3>
+            Student Marks Memo Sheet
+        </h3>
+        <script src="studentmrks_app.js"></script>
+            
+                <center>
+                    <table border=1px solid bgcolor="white" cellspacing="5" >
+                    <caption><b>Enter the Marks : </b></caption>
+                    <tr style="background-color: lavender;">
+                        <th rowspan="2">
+                            Name 
+                        </th>
+                        <th colspan="6">
+                            Marks 
+                        </th>
+                    </tr>
+
+                    <tr style="background: burlywood;">
+                        <th>English</th>
+                        <th>Telugu</th>
+                        <th>Hindi</th>
+                        <th>Science</th>
+                        <th>Maths</th>
+                        <th>Social</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" id="Name"</td>
+                        <td><input type="text" id="English"</td>
+                        <td><input type="text" id="Telugu"</td>
+                        <td><input type="text" id="Hindi"</td>
+                        <td><input type="text" id="Science"</td>
+                        <td><input type="text" id="Maths"</td>
+                        <td><input type="text" id="Social"</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="7" height="30">
+                            <input type="submit" value="calculate" ONCLICK="Sub()">
+                        </th>
+                    </tr>
+                    </table>
+
+                    <br>
+
+                    <table border="1" cellspacing="10" bgcolor="white"
+                        height="100" width="500" cellpadding="5" id="TableScore">
+                        <caption><b>Student Data</b></caption>
+                        <tr>
+                            <th width="180">Name</th>
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Pass Or Fail</th>
+                        </tr>
+                    </table>
+                </center>
+
+    </body>
+</html>
