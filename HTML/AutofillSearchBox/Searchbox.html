@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+           box-sizing: border-box;
+           background: url(Images/oleksandr-canary.jpg),linear-gradient(rgba(0,8,51,0.1), rgba(0,8,51,0.1));
+           background-size:cover;
+           min-height: 97vh;
+           width: 100%;
+           align-items: center;
+           justify-content: center;
+            display: flex; 
+            background-position: center,center;
+        } 
+        
+         .search-bar{
+            width: 100%;
+            max-width: 700px;
+            background:rgba(255,255,255, 0.2);
+            border-radius: 60px;
+            padding: 10px , 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            backdrop-filter: blur(4px) saturate(180%);
+        } 
+        .search-bar input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            padding: 12px 20px;
+            color: #fff ;
+        }
+        ::selection{
+            color: #fff;
+            background: #664aff;
+        }
+        .search-bar button img{
+            width: 25px;
+        }
+        .search-bar button{
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background: rgb(51, 173, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="https://wwww.google.com/search" method="get" class="search-bar">
+            <input type="text" placeholder="Search or Any type URL" name="q">
+            <button type="Submit"><img src="Images/icons-search.png" /></button>
+        </form>
+    </div>
+</body>
+</html>
