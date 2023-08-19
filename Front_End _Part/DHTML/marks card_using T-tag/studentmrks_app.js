@@ -1,5 +1,5 @@
 function Sub(){
-    var n, sum, avg;
+    var n, k, r, e, v, sum, avg;
     n=(document.getElementById('Name').value);
     english=parseFloat(document.getElementById('English').value);
     telugu=parseFloat(document.getElementById('Telugu').value);
