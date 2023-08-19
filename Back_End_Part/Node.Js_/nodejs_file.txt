@@ -1,0 +1,59 @@
+
+    NODE_JS:
+  
+   ===>Nodejs is v8(version8) Javascript engine is used.
+
+   ===>it is a Event based and IO Based Application..
+
+   ===>Single Threaded node Module.
+
+   ===>It is not a server, and it is One of the Platform for create a Our Own Server.
+
+   ===>Work with---->http and https(https is a security based server).
+
+
+
+      BASIC WAY OF MAIN FORMATE:
+
+	--->Var http=require("http") ====>(http node module).
+
+	--->var myserver = http.createserver() ===>(create server).
+
+	--->myserver.listen(8081);  ===>(for portnumber).
+
+
+
+	IN CALLBACK METHOD WE HAVE A TWO OBJECTS : 1.Request; 	2.Response;
+
+
+	  --->var http=require("http")
+
+	  --->var myserver = http.createserver((request,response){
+		response.end("some msg")})
+
+
+	STATUS CODES:
+
+		1. 100-199  ---> Informational Response.
+
+		2. 200-299  ---> Successful Response.
+		
+		3. 300-399  ---> Redirection Response.
+
+		4. 400-499  ---> Clienterror Response.
+
+		5. 500-599  ---> Servererror Response.
+
+
+
+	RESPONSE WRITE HEAD:
+
+	Example:
+		   response.writehead(200{
+		      'content-type':'text/plain'
+		   });
+
+		   response.end('filedata')
+
+
+ 
