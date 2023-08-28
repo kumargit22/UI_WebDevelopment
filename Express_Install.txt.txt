@@ -1,0 +1,49 @@
+Express application generator:
+
+1.npx express-generator	===>run the application generator with the npx command.
+
+2.npm install -g express-generator
+3.express
+
+4. express -h	====> display the cmnd option with -h.
+
+  Usage: express [options] [dir]
+
+  Options:
+
+    -h, --help          output usage information
+        --version       output the version number
+    -e, --ejs           add ejs engine support
+        --hbs           add handlebars engine support
+        --pug           add pug engine support
+    -H, --hogan         add hogan.js engine support
+        --no-view       generate without view engine
+    -v, --view <engine> add view <engine> support (ejs|hbs|hjs|jade|pug|twig|vash) (defaults to jade)
+    -c, --css <engine>  add stylesheet <engine> support (less|stylus|compass|sass) (defaults to plain css)
+        --git           add .gitignore
+    -f, --force         force on non-empty directory
+
+	creates an Express app named myapp. The app will be created in a folder named myapp in the current          working directory.
+
+	app create following process steps:
+				
+                                                  		
+		local Directory:				
+			├── app.js
+			├── bin
+			│   └── www
+			├── package.json
+			├── public
+			│   ├── images
+			│   ├── javascripts
+			│   └── stylesheets
+			│       └── style.css
+			├── routes
+			│   ├── index.js
+			│   └── users.js
+			└── views
+			    ├── error.pug
+  			    ├── index.pug
+  			    └── layout.pug
+
+			7 directories, 9 files
