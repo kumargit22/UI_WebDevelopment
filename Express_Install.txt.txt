@@ -3,6 +3,7 @@ Express application generator:
 1.npx express-generator	===>run the application generator with the npx command.
 
 2.npm install -g express-generator
+
 3.express
 
 4. express -h	====> display the cmnd option with -h.
@@ -25,8 +26,8 @@ Express application generator:
 
 	creates an Express app named myapp. The app will be created in a folder named myapp in the current          working directory.
 
-	app create following process steps:
-				
+	application create following process steps:
+	===========================================			
                                                   		
 		local Directory:				
 			├── app.js
